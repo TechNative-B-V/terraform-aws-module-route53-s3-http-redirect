@@ -24,7 +24,7 @@ resource "aws_s3_bucket_website_configuration" "route53_http_redirect_webconf" {
   routing_rules = <<EOF
 [{
     "Redirect": {
-        "Hostname": "${module.route53_http_redirect_target_url.hostname}",
+        "HostName": "${module.route53_http_redirect_target_url.hostname}",
         "Protocol": "${module.route53_http_redirect_target_url.protocol}",
         "ReplaceKeyWith": "${module.route53_http_redirect_target_url.path_and_param}"
     }
