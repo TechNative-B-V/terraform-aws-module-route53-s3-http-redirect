@@ -1,4 +1,4 @@
-# terraform-aws-route53-s3-http-redirect ![](https://img.shields.io/github/workflow/status/TechNative-B-V/terraform-aws-route53-s3-http-redirect/Lint?style=plastic)
+# terraform-aws-route53-s3-http-redirect ![](https://img.shields.io/github/actions/workflow/status/TechNative-B-V/terraform-aws-route53-s3-http-redirect/tflint.yaml?style=plastic)
 
 Implements creates a simple http url forwarding redirect using a route 53 alias
 records and a s3 bucket.
