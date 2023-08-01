@@ -38,7 +38,7 @@ resource "aws_route53_record" "domains" {
   type    = "A"
 
   alias {
-    name                   = "s3-website.${aws_s3_bucket.route53_http_redirect_bucket.region}.amazonaws.com"
+    name                   = aws_s3_bucket_website_configuration.route53_http_redirect_webconf.website_domain
     zone_id                = aws_s3_bucket.route53_http_redirect_bucket.hosted_zone_id
     evaluate_target_health = true
   }
